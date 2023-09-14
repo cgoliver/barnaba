@@ -935,6 +935,7 @@ def annotate_traj(traj, stacking_rho_cutoff=2.5, stacking_angle_cutoff=40, pairi
     top = traj.topology
     # initialize nucleic class
     nn = nucleic.Nucleic(top)
+    print(nn.rna_seq)
     
     #max_r  = np.max(definitions.f_factors)*1.58
     #condensed_idx =  np.triu_indices(len(nn.ok_residues), 1)
