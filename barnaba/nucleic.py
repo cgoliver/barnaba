@@ -76,7 +76,8 @@ class Nucleic:
                 
             self.ok_residues.append(res)
             self.rna_seq_id.append(res_type)
-            self.rna_seq.append("%s_%s_%s" % (res.name,res.resSeq,res.chain.index))
+            # self.rna_seq.append("%s_%s_%s" % (res.name,res.resSeq,res.chain.index))
+            self.rna_seq.append("%s_%s_%s" % (res.name,res.resSeq,res.chain.chain_id))
             
         self.indeces_lcs = np.asarray(indeces_lcs).T
 
